@@ -13,13 +13,10 @@
   --font-family: "HelveticaNeue", sans-serif;
 }
 
-
-
 header {
   background: #373a3c;
   height: 60px;
   border-radius: 4px;
-
 }
 
 .nav_bar {
@@ -39,15 +36,11 @@ header {
   color: #fff;
 }
 
-
-
-
 .xbox-logo {
   width: 96px;
   height: 29px;
   padding-bottom: 13px;
   margin-right: 300px;
-
 }
 
 @font-face {
@@ -99,10 +92,9 @@ header {
   color: #fff;
 }
 
-
 main {
   width: 100%;
-  background-color: #000;
+  background-color: #000000;
 }
 
 .hero-banner {
@@ -125,7 +117,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(15, 13, 13, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,7 +142,6 @@ main {
   margin-bottom: 30px;
   padding-right: 220px;
 }
-
 
 .buttons {
   display: flex;
@@ -219,7 +210,6 @@ main {
   gap: 15px;
 }
 
-
 .game-details {
   background: #f8f9fa;
   padding: 80px 0;
@@ -258,10 +248,6 @@ main {
 
 .info-text {
   width: 40%;
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 36px;
-  color: #435766;
 }
 
 .info-text h3 {
@@ -271,8 +257,6 @@ main {
   font-weight: 400;
   font-size: 36px;
   color: #435766;
-  --font-family: "HelveticaNeue", sans-serif;
-  margin-bottom: 250px;
 }
 
 .info-img {
@@ -284,7 +268,6 @@ main {
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-
 
 .video-section {
   margin: 60px 0;
@@ -307,10 +290,8 @@ main {
   color: #fff;
 }
 
-/* ----- Стили ФУТЕРА (основаны на вашем Footer.png) ----- */
 .site-footer {
   background-color: #151515;
-  /* Почти черный, как на скриншоте */
   padding: 48px 0 30px;
   border-top: 1px solid #2a2a2a;
   font-family: var(--font-family);
@@ -322,7 +303,6 @@ main {
   padding: 0 30px;
 }
 
-/* Верхняя часть футера: навигация и соцсети */
 .footer-top {
   display: flex;
   justify-content: space-between;
@@ -333,7 +313,6 @@ main {
   margin-bottom: 35px;
 }
 
-/* Левая часть: колонки ссылок */
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -346,7 +325,6 @@ main {
 
 .link-column h4 {
   color: #8dd83d;
-  /* Акцентный зеленый, как в карточках */
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 18px;
@@ -373,7 +351,6 @@ main {
   color: #8dd83d;
 }
 
-/* Правая часть: иконки соцсетей (Follow Us) */
 .footer-social {
   text-align: right;
 }
@@ -402,7 +379,6 @@ main {
   opacity: 1;
 }
 
-/* Нижняя часть футера: логотип, копирайт, язык */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -461,46 +437,18 @@ main {
   color: rgba(255, 255, 255, 0.4);
 }
 
-/* Адаптивность */
-@media (max-width: 900px) {
-  .footer-top {
-    flex-direction: column;
-  }
-
-  .footer-social {
-    text-align: left;
-  }
-
-  .social-icons {
-    justify-content: flex-start;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer-links {
-    gap: 30px;
-  }
-}
-
-@media (max-width: 475px) {
-  .footer-links {
-    flex-direction: column;
-    gap: 25px;
-  }
-
-  .footer-container {
-    padding: 0 20px;
-  }
-}
-
-/* Стилизация маленькой иконки и стрелок (как в вашем дизайне) */
 .small-icon {
   width: 14px;
   margin-left: 4px;
   vertical-align: middle;
+}
+
+.btn-desaible {
+  background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
+  color: #ffffff;
+  border-radius: 4px;
+  width: 235px;
+  height: 52px;
 }
 
 .technical-specs-section {
@@ -539,15 +487,7 @@ main {
   display: flex;
   justify-content: center;
   padding-top: 80px;
-  gap: 14px
-}
-
-.btn-desaible {
-  background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
-  color: #ffffff;
-  border-radius: 4px;
-  width: 235px;
-  height: 52px;
+  gap: 14px;
 }
 
 .btn-primary {
@@ -556,6 +496,7 @@ main {
   border-radius: 4px;
   width: 235px;
   height: 52px;
+  margin-bottom: 109px;
 }
 
 .btnn {
@@ -571,4 +512,324 @@ main {
   cursor: pointer;
   border: none;
   padding: 15px 19px;
+}
+
+/* ============================================ */
+/* МОБИЛЬНАЯ АДАПТАЦИЯ (без изменения стилей) */
+/* ============================================ */
+
+/* Планшеты и небольшие ноутбуки */
+@media (max-width: 1024px) {
+  .content {
+    padding-left: 400px;
+    padding-bottom: 80px;
+  }
+  
+  .content p {
+    padding-right: 100px;
+  }
+  
+  .buttons {
+    padding-right: 60px;
+  }
+  
+  .info-text h3 {
+    font-size: 28px;
+  }
+  
+  .footer-links {
+    gap: 100px;
+  }
+  
+  .specs-grid {
+    gap: 2
+5px;
+    padding: 0 20px;
+  }
+  
+  .spec-item p {
+    font-size: 18px;
+  }
+}
+
+/* Мобильные устройства (ширина до 768px) */
+@media (max-width: 768px) {
+  /* Навигация */
+  .nav_bar {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 10px;
+    justify-content: center;
+  }
+  
+  .xbox-logo {
+    margin-right: 0;
+  }
+  
+  header {
+    height: auto;
+    min-height: 60px;
+  }
+  
+  /* Баннер */
+  .hero-banner {
+    height: 400px;
+  }
+  
+  .content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+  
+  .content h1 {
+    font-size: 28px;
+  }
+  
+  .content p {
+    padding-right: 0;
+    font-size: 14px;
+  }
+  
+  .buttons {
+    padding-top: 60px;
+    padding-right: 0;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  /* Game Details */
+  .game-details {
+    padding: 40px 0;
+  }
+  
+  .details-header h2 {
+    font-size: 28px;
+    margin-bottom: 60px;
+  }
+  
+  .details-btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .details-btns .btn {
+    width: 200px;
+    text-align: center;
+  }
+  
+  /* Info блоки */
+  .info-block,
+  .info-block.reverse {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  
+  .info-text,
+  .info-img {
+    width: 100%;
+  }
+  
+  .info-text {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .info-text h3 {
+    font-size: 24px;
+  }
+  
+  /* Видео */
+  .video-section {
+    margin: 30px 0;
+  }
+  
+  /* Technical Specs */
+  .technical-specs-section {
+    padding-top: 50px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .specs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .spec-item {
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .spec-item p {
+    font-size: 16px;
+  }
+  
+  .spec-buttons {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    gap: 15px;
+  }
+  
+  .btnn {
+    width: 220px;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+  
+  .btn-desaible,
+  .btn-primary {
+    width: 220px;
+    height: auto;
+    margin-bottom: 0;
+  }
+  
+  /* Футер */
+  .footer-container {
+    padding: 0 20px;
+  }
+  
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-social {
+    text-align: left;
+  }
+  
+  .social-icons {
+    justify-content: flex-start;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .footer-legal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
+
+/* Очень маленькие телефоны (до 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .nav_bar {
+    gap: 10px;
+  }
+  
+  .nav_bar li a {
+    font-size: 12px;
+  }
+  
+  .xbox-logo {
+    width: 70px;
+    height: auto;
+  }
+  
+  .hero-banner {
+    height: 350px;
+  }
+  
+  .content h1 {
+    font-size: 22px;
+  }
+  
+  .content p {
+    font-size: 12px;
+  }
+  
+  .btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  .details-header h2 {
+    font-size: 22px;
+  }
+  
+  .info-text h3 {
+    font-size: 20px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .spec-item p {
+    font-size: 14px;
+  }
+  
+  .btnn {
+    font-size: 14px;
+    width: 200px;
+  }
+  
+  .link-column h4 {
+    font-size: 14px;
+  }
+  
+  .link-column a {
+    font-size: 12px;
+  }
+  
+  .footer-social h4 {
+    font-size: 14px;
+  }
+  
+  .language-selector span {
+    font-size: 11px;
+  }
+  
+  .copyright {
+    font-size: 11px;
+  }
+}
+
+/* Горизонтальная ориентация на мобильных */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-banner {
+    height: 300px;
+  }
+  
+  .content {
+    padding-bottom: 20px;
+  }
+  
+  .buttons {
+    padding-top: 30px;
+  }
+  
+  .game-details {
+    padding: 30px 0;
+  }
+  
+  .details-header h2 {
+    margin-bottom: 30px;
+  }
+  
+  .info-block {
+    margin-top: 30px;
+  }
 }
