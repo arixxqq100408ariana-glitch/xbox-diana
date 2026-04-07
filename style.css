@@ -36,6 +36,9 @@ header {
   list-style: none;
   gap: 24px;
   padding-top: 21px;
+} 
+.nav_bar li img{
+  padding-right: 100px;
 }
 
 .nav_bar li a {
@@ -82,6 +85,8 @@ main {
 .content {
   text-align: center;
   color: #fff;
+  padding-left: 750px;
+  padding-bottom: 115px;
 }
 
 .content h1 {
@@ -94,6 +99,7 @@ main {
   font-family: var(--font-family);
   font-size: 16px;
   margin-bottom: 30px;
+  padding-right: 220px;
 }
 
 /* Стили кнопок */
@@ -101,6 +107,8 @@ main {
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding-top: 139px;
+  padding-right:120px;
 }
 
 .btn {
