@@ -309,7 +309,8 @@ main {
 
 /* ----- Стили ФУТЕРА (основаны на вашем Footer.png) ----- */
 .site-footer {
-  background-color: #151515; /* Почти черный, как на скриншоте */
+  background-color: #151515;
+  /* Почти черный, как на скриншоте */
   padding: 48px 0 30px;
   border-top: 1px solid #2a2a2a;
   font-family: var(--font-family);
@@ -344,7 +345,8 @@ main {
 }
 
 .link-column h4 {
-  color: #8dd83d; /* Акцентный зеленый, как в карточках */
+  color: #8dd83d;
+  /* Акцентный зеленый, как в карточках */
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 18px;
@@ -464,26 +466,31 @@ main {
   .footer-top {
     flex-direction: column;
   }
+
   .footer-social {
     text-align: left;
   }
+
   .social-icons {
     justify-content: flex-start;
   }
+
   .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .footer-links {
     gap: 30px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 475px) {
   .footer-links {
     flex-direction: column;
     gap: 25px;
   }
+
   .footer-container {
     padding: 0 20px;
   }
@@ -494,4 +501,76 @@ main {
   width: 14px;
   margin-left: 4px;
   vertical-align: middle;
+}
+
+.technical-specs-section {
+  padding-top: 105px;
+}
+
+.section-title {
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  color: #435766;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spec-item {
+  padding-top: 47px;
+}
+
+.spec-item p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 114%;
+  color: #435766;
+}
+
+.spec-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  gap: 14px
+}
+
+.btn-desaible {
+  background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
+  color: #ffffff;
+  border-radius: 4px;
+  width: 235px;
+  height: 52px;
+}
+
+.btn-primary {
+  background-color: #7ed321;
+  color: #ffffff;
+  border-radius: 4px;
+  width: 235px;
+  height: 52px;
+
+}
+
+.btnn {
+  display: inline-block;
+  
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 117%;
+  color: #fff;
+  text-decoration: none;
+
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
 }
