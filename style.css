@@ -46,3 +46,78 @@ header {
   line-height: 100%;
   color: #fff;
 }
+
+/* Обнуляем отступы для main, чтобы картинка была во весь экран */
+main {
+  width: 100%;
+  background-color: #000;
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Настройте высоту под макет */
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Растягивает фото без искажений на всю область */
+  display: block;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2); /* Легкое затемнение, чтобы текст читался */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  color: #fff;
+}
+
+.content h1 {
+  font-family: var(--font-family);
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+.content p {
+  font-family: var(--font-family);
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Стили кнопок */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-green {
+  background-color: #97f024; /* Яркий цвет Xbox */
+  color: #ffffff;
+}
+
+.btn-green:hover {
+  background-color: #7ed321;
+  transform: scale(1.05);
+}
