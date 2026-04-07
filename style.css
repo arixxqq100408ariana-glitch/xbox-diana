@@ -561,16 +561,15 @@ main {
 
 .btnn {
   display: inline-block;
-  
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
   line-height: 117%;
   color: #fff;
   text-decoration: none;
-
   border-radius: 3px;
   transition: all 0.3s ease;
   cursor: pointer;
   border: none;
+  padding: 15px 19px;
 }
